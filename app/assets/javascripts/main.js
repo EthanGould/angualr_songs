@@ -1,4 +1,4 @@
-var SongsApp = angular.module('SongsApp' ['ngRoute']);
+var SongsApp = angular.module('SongsApp', ['ngRoute']);
 
 SongsApp.config(['$routeProvider', function($routeProvider){
   $routeProvider.when('/', {
