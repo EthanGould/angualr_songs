@@ -1,5 +1,7 @@
 angular.module('SongsApp').factory('songData', ['$http', function($http){
-  var songData = {};
+  var songData = {
+    songs: [{title: 'monkey soup...'}]
+  };
 
     songsHandler = function(data){
         songData.songs = data;
