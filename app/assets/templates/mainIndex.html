@@ -1,6 +1,6 @@
 <h2>Welcome to LameTunes</h2>
-
-<div class="song-block" ng-repeat="song in data.songs">
+<input type="text" ng-model="query" placeholder="find a lame tune...">
+<div class="song-block" ng-repeat="song in data.songs | filter: query">
   <h2>{{song.title}}</h2>
   <li>{{song.artist}}</li>
   <li>${{song.price}}</li>
